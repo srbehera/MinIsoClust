@@ -10,6 +10,7 @@
             b: bucket size
             th: edit distance threshold
             l: minimum shared segment size
+            
     sh clust_script.sh 
 
 # Output
