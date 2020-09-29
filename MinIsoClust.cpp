@@ -1,7 +1,6 @@
-/* min-hash-k: Program to estimate Jaccard similarity using MinHash with k hash functions.
-   James S. Plank
-   CS494/CS594 - Advanced Algorithms and Programming
-   October, 2017
+/* 
+   MinIsoClust: Program to cluster isoforms using MinHash LSH.
+   Sairam Behera
  */
 #include <stack> 
 #include <omp.h>
@@ -82,11 +81,7 @@ int main(int argc, char **argv)
   kseq_destroy(seq);
   gzclose(fp);
 
-  /* Calculate the number of bytes for all of the hashes, and allocate a
-     hash buffer for temporary use, and a hash buffer for each data set
-     to hold the minimum hashes for each data set.   Set each byte of 
-     these buffers to 0xff, which is their maximum value, regardless of the
-     size of the hash. */
+ 
   
   cout << "size: " << seqns.size() << endl;
 
@@ -97,8 +92,6 @@ int main(int argc, char **argv)
   map<string, uint64_t> hashV; 
   vector<vector<uint64_t>> MHASH;
   
-  /* Read the data sets.  For each value, you're going to calculate the k hashes
-     and then update the minimum hashes for the data set. */
 
      string s = "";
   
