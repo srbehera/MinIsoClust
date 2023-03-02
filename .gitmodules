@@ -1,0 +1,3 @@
+[submodule "edlib"]
+	path = edlib
+	url = https://github.com/srbehera/edlib.git
