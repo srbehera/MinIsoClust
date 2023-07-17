@@ -7,7 +7,7 @@
             N: minhash signature size 
             fasta: input fasta file name
             q: q-gram size
-            b: bucket size
+            b: band size 
             l: minimum sequences in each cluster
             th: edit distance threshold
             
