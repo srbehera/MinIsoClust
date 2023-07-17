@@ -8,7 +8,7 @@
             fasta: input fasta file name
             q: q-gram size
             b: bucket size
-            l: minimum shared segment size
+            l: minimum sequences in each cluster
             th: edit distance threshold
             
             
