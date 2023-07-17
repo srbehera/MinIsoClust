@@ -33,7 +33,7 @@ using namespace std;
 
 void usage(const string s)
 {
-    fprintf(stderr, "usage: ./minhash <k>  <fasta> <kmerLen> <bucketsize> <min_element_cluster> <threshold_similarity>\n");
+    fprintf(stderr, "usage: ./MinIsoClust <N>  <fasta> <qgramrLen> <bucketsize> <min_element_cluster> <threshold_similarity>\n");
     if (s != "") fprintf(stderr, "%s\n", s.c_str()); 
     exit(1);
 }
